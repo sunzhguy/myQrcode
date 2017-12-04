@@ -1,0 +1,187 @@
+zbar/zbar_libzbar_la-convert.lo: zbar/convert.c zbar/image.h \
+ include/config.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/inttypes.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/features.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdc-predef.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/predefs.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/cdefs.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/wordsize.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/gnu/stubs.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sgidefs.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/gnu/stubs-o32.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stdint.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdint.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/wchar.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdlib.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stddef.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/waitflags.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/waitstatus.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/endian.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/endian.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/byteswap.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/byteswap-16.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/types.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/types.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/typesizes.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/time.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/select.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/select.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sigset.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/time.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/sysmacros.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/pthreadtypes.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/alloca.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/assert.h \
+ include/zbar.h zbar/error.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdio.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/libio.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/_G_config.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/wchar.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stdarg.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/stdio_lim.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sys_errlist.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/stdio.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/string.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/xlocale.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/string.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/string2.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/errno.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/errno.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/linux/errno.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/asm/errno.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/asm-generic/errno-base.h \
+ zbar/symbol.h zbar/refcnt.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/pthread.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sched.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sched.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/setjmp.h \
+ zbar/video.h zbar/mutex.h zbar/window.h zbar/Timer.h \
+ /home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/time.h
+
+zbar/image.h:
+
+include/config.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/inttypes.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/features.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdc-predef.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/predefs.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/cdefs.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/wordsize.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/gnu/stubs.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sgidefs.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/gnu/stubs-o32.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stdint.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdint.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/wchar.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdlib.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stddef.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/waitflags.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/waitstatus.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/endian.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/endian.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/byteswap.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/byteswap-16.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/types.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/types.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/typesizes.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/time.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/select.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/select.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sigset.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/time.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/sysmacros.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/pthreadtypes.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/alloca.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/assert.h:
+
+include/zbar.h:
+
+zbar/error.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/stdio.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/libio.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/_G_config.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/wchar.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../lib/gcc/mips-linux-gnu/4.7.2/include/stdarg.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/stdio_lim.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sys_errlist.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/stdio.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/string.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/xlocale.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/string.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/string2.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/errno.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/errno.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/linux/errno.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/asm/errno.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/asm-generic/errno-base.h:
+
+zbar/symbol.h:
+
+zbar/refcnt.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/pthread.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sched.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/sched.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/bits/setjmp.h:
+
+zbar/video.h:
+
+zbar/mutex.h:
+
+zbar/window.h:
+
+zbar/Timer.h:
+
+/home/sunzhguy/Halley2/ingenic-LinuxKernel/prebuilts/toolchains/mips-gcc472-glibc216/bin/../mips-linux-gnu/libc/usr/include/sys/time.h:
