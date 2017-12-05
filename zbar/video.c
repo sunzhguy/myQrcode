@@ -156,8 +156,8 @@ int zbar_video_open (zbar_video_t *vdo,
         dev = ldev = strdup("/dev/video0");
         ldev[10] = '0' + id;
     }
-
-    rc =0;//by sunzhguy _zbar_video_open(vdo, dev);
+    rc=_zbar_video_open(vdo, dev);
+    //rc =0;//by sunzhguy _zbar_video_open(vdo, dev);
   
     if(ldev)
         free(ldev);

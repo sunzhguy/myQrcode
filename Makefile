@@ -1,19 +1,17 @@
 #CC=mips-linux-gnu-gcc
 #CC=gcc
-CC=arm-linux-androideabi-gcc
-#CC=arm-linux-gnueabihf-gcc
-CFLAG=--sysroot=/home/newhowsun/firefly/prebuilts/ndk/current/platforms/android-21/arch-arm -O3 -o
-#CFLAG=-O2 -o
-_scan_image:scan_image.o img_scanner.o error.o decoder.o qr_finder.o  \
+#CC=arm-linux-gcc
+CC=arm-linux-gnueabihf-gcc
+CFLAG=-O3  -o
+myzbar:myvideo.o img_scanner.o error.o decoder.o qr_finder.o  \
             symbol.o scanner.o image.o refcnt.o convert.o \
 	    qrdec.o isaac.o rs.o bch15_5.o util.o binarize.o qrdectxt.o  \
-            video.o window.o
-	${CC} ${CFLAG}   _scan_image scan_image.o zbar/img_scanner.o zbar/error.o zbar/decoder.o \
+            video.o window.o v4l2.o v4l.o myvideo.o processor.o 
+	${CC} ${CFLAG}  myzbar myvideo.o zbar/img_scanner.o zbar/error.o zbar/decoder.o \
 	zbar/decoder/qr_finder.o zbar/convert.o \
 	zbar/symbol.o zbar/scanner.o zbar/image.o zbar/refcnt.o \
 	zbar/video.o zbar/window.o   \
-	zbar/qrcode/qrdec.o zbar/qrcode/isaac.o zbar/qrcode/rs.o  zbar/qrcode/bch15_5.o zbar/qrcode/util.o zbar/qrcode/binarize.o zbar/qrcode/qrdectxt.o -lpthread 
-#-static
+	zbar/qrcode/qrdec.o zbar/qrcode/isaac.o zbar/qrcode/rs.o  zbar/qrcode/bch15_5.o zbar/qrcode/util.o zbar/qrcode/binarize.o zbar/qrcode/qrdectxt.o zbar/video/v4l.o zbar/video/v4l2.o zbar/processor.o -lpthread -static
 #-------------------zbar
 #-------covert video window
 video.o: zbar/video.c 
@@ -41,7 +39,11 @@ scanner.o:zbar/scanner.c include/config.h include/zbar.h zbar/svg.h zbar/debug.h
 	${CC} -c ${CFLAG} zbar/scanner.o zbar/scanner.c -I include
 decoder.o: zbar/decoder.c zbar/decoder.h  include/zbar.h include/config.h  zbar/decoder/qr_finder.h 
 	${CC} -c ${CFLAG} zbar/decoder.o zbar/decoder.c  -I ./include -I zbar/decoder -I ./zbar
+v4l2.o: zbar/video/v4l2.c   
+	${CC} -c ${CFLAG} zbar/video/v4l2.o zbar/video/v4l2.c  -I ./zbar -I include
 
+v4l.o: zbar/video/v4l.c   
+	${CC} -c ${CFLAG} zbar/video/v4l.o zbar/video/v4l.c  -I ./zbar -I include
 #--------------decoder
 qr_finder.o:zbar/decoder/qr_finder.c include/config.h include/zbar.h zbar/decoder.h zbar/debug.h
 	${CC} -c ${CFLAG} zbar/decoder/qr_finder.o zbar/decoder/qr_finder.c -I ./include -I zbar
@@ -61,7 +63,7 @@ binarize.o:zbar/qrcode/binarize.c zbar/qrcode/binarize.h
 	${CC} -c ${CFLAG} zbar/qrcode/binarize.o zbar/qrcode/binarize.c -I zbar -I include
 qrdectxt.o:zbar/qrcode/qrdectxt.c 
 	${CC} -c ${CFLAG} zbar/qrcode/qrdectxt.o zbar/qrcode/qrdectxt.c -I zbar	-I include
-scan_image.o:scan_image.c include/zbar.h
-	${CC} -c ${CFLAG} scan_image.o scan_image.c -I ./include
+myvideo.o:test_video.c include/zbar.h
+	${CC} -c ${CFLAG} myvideo.o test_video.c -I ./include -I zbar
 clean:
 	rm ./*.o zbar/*.o

@@ -918,6 +918,8 @@ extern int zbar_process_one(zbar_processor_t *processor,
 extern int zbar_process_image(zbar_processor_t *processor,
                               zbar_image_t *image);
 
+extern void zbar_Handle (zbar_processor_t *proc);
+
 /** display detail for last processor error to stderr.
  * @returns a non-zero value suitable for passing to exit()
  */

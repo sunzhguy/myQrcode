@@ -60,18 +60,18 @@
 /* time interval for which two images are considered "nearby"
 
  */
-#define CACHE_PROXIMITY   200 /* ms org=1000 */
+#define CACHE_PROXIMITY   1000 /* ms org=1000 */
 
 #define SUN_TIMEOUT        650
 
 /* time that a result must *not* be detected before
  * it will be reported again
  */
-#define CACHE_HYSTERESIS  500 /* ms orig=2000*/ 
+#define CACHE_HYSTERESIS  2000 /* ms orig=2000*/ 
 
 /* time after which cache entries are invalidated
  */
-#define CACHE_TIMEOUT    600 //(CACHE_HYSTERESIS * 2) /* ms */  //(CACHE_HYSTERESIS * 2)
+#define CACHE_TIMEOUT  (CACHE_HYSTERESIS * 2) /* ms */  //(CACHE_HYSTERESIS * 2)
 
 #define NUM_SCN_CFGS (ZBAR_CFG_Y_DENSITY - ZBAR_CFG_X_DENSITY + 1)
 
@@ -352,6 +352,19 @@ static inline void cache_sym (zbar_image_scanner_t *iscn,
         }
         else if(dup || near_thresh)
             entry->cache_count++;
+
+		if(entry->cache_count==0)
+					sun_time=sym->time;
+			   if(dup||near_thresh)
+				{
+				  unsigned int tm =entry->time-sun_time;
+				  if(tm>=50)
+					{
+					  sun_time=entry->time;
+					  //printf("tm====%d\n",tm);
+					  entry->cache_count=0;
+					}
+				}
 
         sym->cache_count = entry->cache_count;
     }
@@ -842,6 +855,8 @@ int zbar_scan_image (zbar_image_scanner_t *iscn,
     _zbar_qr_decode(iscn->qr, iscn, img);
 #endif
 
+#if 0
+
     /* FIXME tmp hack to filter bad EAN results */
     /* FIXME tmp hack to merge simple case EAN add-ons */
     char filter = (!iscn->enable_cache &&
@@ -935,7 +950,7 @@ int zbar_scan_image (zbar_image_scanner_t *iscn,
 			endtm=endtm-(iscn->time);
 			zprintf(13, "zbar_scan_image processing: %ld,syms->nsyms=%d\n",endtm,syms->nsyms);
 	 //Debug for sunzhguy
-
+#endif
 	
     return(syms->nsyms);
 }
